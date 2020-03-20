@@ -273,3 +273,12 @@ Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzysta
 
 <img src="images/binom_pois.png" alt="Binominal_Poisson">
 
+
+# Ciągłe rozkłady prawdopodobieństwa
+W odróżnieniu od dyskretnych rozkładów prawdopodobieństwa, w których zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym, w rozkładach ciągłych zmienna losowa może przyjmować wartości ciągłe (czyli dowolne wartości zmiennoprzecinkowe). 
+
+W ciągłym rozkładzie prawdopodobieństwa nie zadajemy już pytania, o prawdopodobieństwo otrzymania jednej konkretnej wartości zmiennej losowej (bo wynosi ono zero). Możemy jedynie pytać jakie jest prawdopodobieństwo, że zmienna ciągła przyjmuje wartości w pewnym przedziale liczbowym (mówimy wtedy o gęstości prawdopodobieństwa).
+
+## Rozkład jednostajny
+Inaczej rozkład prostokątny. Jest to rozkład prawdopodobieństwa, dla którego gęstość prawdopodobieństwa w przedziale od *a* do *b* jest stała i różna od zera, a poza nim równa zeru.
+
