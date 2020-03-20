@@ -286,7 +286,8 @@ W ciągłym rozkładzie prawdopodobieństwa nie zadajemy już pytania, o prawdop
 Inaczej rozkład prostokątny. Jest to rozkład prawdopodobieństwa, dla którego gęstość prawdopodobieństwa w przedziale od *a* do *b* jest stała i różna od zera, a poza nim równa zeru.
 
 Na przykład, rozkład jednostajny, w którym *a* = 1 i *b* = 3.
-<img src="images/uniform_distribution.png" alt="Uniform distribution" width="500px"> 
+<img src="images/uniform_distribution.png" alt="Uniform distribution" width="400px">
+ 
 Prawdopodobieństwo uzyskania konkretnej wartości między 1 i 3 wynosi 0. Pole pod krzywą to prawdopodobieństwo całkowite wynoszące 1.
 
 
@@ -318,7 +319,7 @@ vis.normal()
 
 Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większy, tym bardziej spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
 
-<img src="images/normal_distribution.png" alt="Normal distribution"> 
+<img src="images/normal_distribution.jpg" alt="Normal distribution"> 
 
 W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie (po dwóch 68.28%). 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli średnia = 0, a odchylenie standardowe = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
 
