@@ -41,10 +41,12 @@ W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończon
 Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. sukces-porażka, zdrowy-chory, orzeł-reszka, puryna-pirymidyna).
 
 ### Zad. 3
-Ile wynosi prawdopodobieństwo wypadnięcia orła dokładnie dwa razy?
-> O: orzeł, R: reszka
+Przestrzeń zdarzeń elementarnych:
 
 Ω = {OOO, **OO**R, ORO R**OO**, RRO, ROR, ORR, RRR}
+> O: orzeł, R: reszka
+
+Prawdopodobieństwo wypadnięcia orła dokładnie dwa razy:
 
 ```
 P(X = 2) = 3/8
@@ -54,6 +56,10 @@ P(X = 2) = 3/8
 Samodzielnie
 
 ### Zad. 5
+Przestrzeń zdarzeń elementarnych dla trzech rzutów monetą wynosi:
+
+Ω = {OOO, OOR, ORO, ROO, RRO, ROR, ORR, RRR}
+
 Podczas trzech rzutów monetą prawdopodobieństwo:
 - wypadnięcia orła 0 razy: P(X = 0) = 1/8 
 - wypadnięcia orła 1 raz: P(X = 1) = 3/8
@@ -61,6 +67,8 @@ Podczas trzech rzutów monetą prawdopodobieństwo:
 - wypadnięcia orła 3 razy: P(X = 3) = 1/8
 
 Prawdopodobieństwa zdarzeń elementarnych muszą się sumować do 1.
+
+Wykres prawdopodobieństwa w R:
 
 ```R
 x = c(0, 1, 2, 3)
@@ -90,7 +98,7 @@ W R:
 sum(x*y)
 ```
 
-Szybsze rozwiązanie: liczba rzutów *n* razy prawdopodobieństwo wypadnięcia orła.
+Szybsze rozwiązanie: liczba rzutów monetą (*n*) razy prawdopodobieństwo wypadnięcia orła.
 
 ```
 E(X) = n * p = 3 * 0.5
@@ -98,7 +106,7 @@ E(X) = n * p = 3 * 0.5
 
 
 ### Zad. 8
-Rzucam 5 razy kostką do gry i chciałbym wiedzieć jakie jest prawdopodobieństwo, że szóstka wypadnie dokładnie dwa razy. Zamiast wypisywać wszystkie kombinacje zdarzeń elementarnych (Ω = {11111, 11112, ..}), korzystamy z rozkładu dwumianowego.
+Rzucasz 5 razy kostką do gry i chciał(a)byś wiedzieć ile wynosi prawdopodobieństwo, że szóstka wypadnie dokładnie dwa razy. Zamiast wypisywać wszystkie kombinacje zdarzeń elementarnych (Ω = {11111, 11112, ..}), korzystamy z rozkładu dwumianowego.
 
 Rozkład ten opisuje prawdopodobieństwo zajścia *k* sukcesów w ciągu *n* niezależnych prób (zdarzeń losowych), z których każda próba ma stałe prawdopodobieństwo sukcesu równe *p*. Innymi słowy, o tym rozkładzie mówimy wtedy, kiedy mamy *n* niezależnych doświadczeń losowych (np. 3 rzuty monetą), w których prawdopodobieństwo sukcesu (zajścia określonego zdarzenia np. wypadnięcia orła) w każdym doświadczeniu jest stałe i niezależne od wyników poprzednich i równe *p* (np. wynosi 0.5).
 
@@ -126,8 +134,9 @@ Jakie jest prawdopodobieństwo, że orzeł wypadnie przynajmniej raz?
 [1] 0.875
 ```
 
-Ile zatem wynosi prawdopodobieństwo, że w 5 rzutach kostkach, szóstka wypadnie dokładnie dwa razy?
-
+Ile wynosi prawdopodobieństwo, że w 5 rzutach kostkach:
+1. szóstka wypadnie dokładnie dwa razy?
+2. szóstka wypadnie co najwyżej dwa razy?
 
 ### Zad. 9
 samodzielnie
@@ -204,7 +213,7 @@ Funkcja prawdopodobieństwa ma postać:
 
 <img src="https://latex.codecogs.com/png.latex?%5Clarge%20P%28X%3Dk%29%20%3D%20P%28k%2C%20%5Clambda%29%20%3D%20%5Cfrac%7B%5Clambda%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-%5Clambda%7D%20%3D%20%5Cfrac%7B%28np%29%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-np%7D" title="P(X=k) = P(k, \lambda) = \frac{\lambda^{k}}{k!}e^{-\lambda} = \frac{(np)^{k}}{k!}e^{-np}" />
 
-Parametr λ jest wartością oczekiwaną (średnią) w tym rozkładzie, natomiast *k* oznacza liczbę zajść pewnego zdarzenia.
+Parametr λ jest wartością oczekiwaną (*np*) w tym rozkładzie, natomiast *k* oznacza liczbę zajść pewnego zdarzenia.
 
 
 ### Zad. 17
@@ -253,8 +262,7 @@ k = 0
 Mamy zatem wszystkie dane aby rozwiązać zadanie używając rozkładu dwumianowego.
 
 ```R
-> dbinom(k, n, p)
-[1] 0.818722          # dokładne prawdopodobieństwo
+> dbinom(k, n, p) # dokładne prawdopodobieństwo
 ```
 
 Rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopodobieństwa w rozkładzie dwumianowym przy dużej liczbie prób i niskim prawdopodobieństwie sukcesu, tj. wtedy, gdy iloczy λ = *np* staje się wielkością stała. Jeżeli jest duża liczba prób (czyli *n* >= 100) i prawdopodobieństwo sukcesu jest niskie (*p* <= 0.2) to rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopodobieństwa w rozkładzie dwumianowym.
@@ -265,8 +273,7 @@ Rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopo
 
 ```R
 > lambda = n*p
-> dpois(0, lambda)
-[1] 0.8187308         # przybliżona wartość prawdopodobieństwa
+> dpois(0, lambda)  # przybliżona wartość prawdopodobieństwa
 ```
 
 Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzystając z biblioteki TeachingDemos i funkcji vis.binom(). Wyraźne podobieństwo w dwóch rozkładach widoczne jest gdy *n* >= 100 i *p* <= 0.2.
