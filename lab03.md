@@ -15,11 +15,12 @@ Pojedynczy wynik doświadczenia (np. wypadnięcie szóstki) nazywamy **zdarzenie
 
 Zbiór wszystkich możliwych wyników doświadczenia losowego nazywamy **przestrzenią zdarzeń elementarnych** i oznaczamy dużą grecką literą omega Ω 
 
->Ω = {1, 2, 3, 4, 5, 6}
-
+```
+Ω = {1, 2, 3, 4, 5, 6}
+```
 
 ### Zad. 2
-Zdarzenia elementarne przyjęło się oznaczać wielkimi literami z początku alfabetu (A,B,C). Na przykład zdarzenie elementarne polegające na wyrzuceniu piątki lub szóstki zapiszemy: 
+Zdarzenia elementarne przyjęło się oznaczać wielkimi literami z początku alfabetu (A,B,C). Na przykład zdarzenie elementarne polegające na wyrzuceniu pięciu lub sześciu oczek w rzucie kostką zapiszemy: 
 
 ```
 A = {5, 6}
@@ -29,6 +30,21 @@ Zatem prawdopodobieństwo trafienia piątki lub szóstki zapiszemy jako:
 
 ```
 P(A) = |A| / |Ω| = 2 / 6 = 0.33
+```
+
+Zdarzenia, których prawdopodobieństwo otrzymania wynosi 1 nazywają się zdarzeniami pewnymi. Z kolei, zdarzenia, których prawdopodobieństwo wynosi 0 nazywają się zdarzeniami niemożliwymi.
+
+## Dyskretne rozkłady prawdopodobieństwa
+W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym (np. liczba oczek na kostce, liczba dzieci, liczba pomyłek). Jest to zmienia skokowa, która najczęściej zmienia się o jeden.
+
+### Zad. 3
+Ile wynosi prawdopodobieństwo wypadnięcia orła dokładnie dwa razy?
+> O: orzeł, R: reszka
+
+Ω = {OOO, **OO**R, ORO R**OO**, RRO, ROR, ORR, RRR}
+
+```
+P(X = 2) = 3/8
 ```
 
 
