@@ -56,10 +56,9 @@ Prawdopodobieństwo wypadnięcia orła dokładnie dwa razy:
 P(X = 2) = 3/8
 ```
 
-### Zad. 4
+### Zad. 4 (samodzielnie)
 >Ile wynosi prawdopodobieństwo otrzymania zero orłów w rzucie z poprzedniego zadania?
 
-samodzielnie
 
 ### Zad. 5
 >Narysuj w R wykres funkcji prawdopodobieństwa pojawienia się orła dokładnie 0, 1, 2, 3 razy w trzech rzutach monetą.
@@ -228,7 +227,7 @@ Funkcja prawdopodobieństwa ma postać:
 
 <img src="https://latex.codecogs.com/png.latex?%5Clarge%20P%28X%3Dk%29%20%3D%20P%28k%2C%20%5Clambda%29%20%3D%20%5Cfrac%7B%5Clambda%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-%5Clambda%7D%20%3D%20%5Cfrac%7B%28np%29%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-np%7D" title="P(X=k) = P(k, \lambda) = \frac{\lambda^{k}}{k!}e^{-\lambda} = \frac{(np)^{k}}{k!}e^{-np}" />
 
-Parametr λ jest wartością oczekiwaną (*np*) w tym rozkładzie, natomiast *k* oznacza liczbę zajść pewnego zdarzenia.
+Parametr λ jest wartością oczekiwaną (*n * p*) w tym rozkładzie, natomiast *k* oznacza liczbę zajść pewnego zdarzenia.
 
 
 ### Zad. 17
