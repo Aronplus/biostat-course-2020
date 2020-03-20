@@ -493,6 +493,6 @@ pt(1, df=10)
 ## Centralne Twierdzenie Graniczne
 To jedno z bardzo interesujących i jednocześnie zaskakujących rzeczy o naszym świecie. Jest to jedno z najważniejszych twierdzeń rachunku prawdopodobieństwa.
 
-<figure class="video_container">
-  <iframe src="https://youtu.be/JNm3M9cqWyc" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JNm3M9cqWyc/0.jpg)](https://youtu.be/JNm3M9cqWyc)
+
