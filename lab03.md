@@ -494,5 +494,5 @@ pt(1, df=10)
 To jedno z bardzo interesujących i jednocześnie zaskakujących rzeczy o naszym świecie. Jest to jedno z najważniejszych twierdzeń rachunku prawdopodobieństwa.
 
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JNm3M9cqWyc/0.jpg)](https://youtu.be/JNm3M9cqWyc)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YAlJCEDH2uY/0.jpg)](https://youtu.be/YAlJCEDH2uY)
 
