@@ -549,6 +549,6 @@ Centralne Twierdzenie Graniczne daje nam dwie zależności matematyczne:
 3. Twierdzenie Graniczne działa dla każdego parametru (nie tylko średniej): np. mediany, sumy liczb, dominanty, rozstępu.
 
 ### Zad. 34 (samodzielnie)
-> Sprawdź, jak działa w praktyce CTG przeprowadzając symulację http://www.ltcconline.net/greenl/java/Statistics/clt/cltsimulation.html dla: (a) rozkładu jednostajnego (b) rozkładu prawostronnego i (c) swojego narysowanego rozkładu.
+> Sprawdź, jak działa w praktyce CTG przeprowadzając symulację http://www.ltcconline.net/greenl/java/Statistics/clt/cltsimulation.html dla: (1) rozkładu jednostajnego (2) rozkładu prawostronnego i (3) swojego narysowanego rozkładu.
 
 
