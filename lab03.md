@@ -500,12 +500,12 @@ Centralne Twierdzenie Graniczne daje nam dwie zależności matematyczne:
 
 1. Parametr (np. średnia) uzyskanego rozkładu normalnego, będzie taki sam jak w przypadku wejściowej oryginalnej populacji.
 
-<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cmu_%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cmu" title="\mu_{\bar{x}} = \mu" />
+   <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cmu_%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cmu" title="\mu_{\bar{x}} = \mu" />
 
 
 2. Odchylenie standardowe w uzyskanym rozkładzie normalnym jest równe: 
 
-<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Csigma_%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D" title="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" />
+   <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Csigma_%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D" title="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" />
 
 3. Twierdzenie Graniczne działa dla każdego parametru (nie tylko średniej): np. mediany, sumy liczb, dominanty, rozstępu.
 
