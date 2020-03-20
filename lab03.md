@@ -477,3 +477,22 @@ Testu t-Studenta będziemy używać w testowaniu hipotez (np. gdy będziemy spra
 
 
 ### Zad. 32
+Wylosowanie 1000 liczb z rozkładu t-Studenta dla 10 stopni swobody.
+
+```R
+rt(10000, df=10)
+```
+
+### Zad. 33
+Prawdopodobieństwo znalezienia wartości mniejszych lub równych 1 w rozkładzie t-Studenta z 10 stopniami swobody wynosi:
+
+```R
+pt(1, df=10)
+```
+
+## Centralne Twierdzenie Graniczne
+To jedno z bardzo interesujących i jednocześnie zaskakujących rzeczy o naszym świecie. Jest to jedno z najważniejszych twierdzeń rachunku prawdopodobieństwa.
+
+<figure class="video_container">
+  <iframe src="https://youtu.be/JNm3M9cqWyc" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
