@@ -5,4 +5,4 @@ Wiele zjawisk biologicznych czy ekonomicznych można wymodelować probabilistycz
 
 # Podstawowe pojęcia związane z rachunkiem prawdopodobieństwa
 
-Gdy rzucam kostką do gry, **zmienna losowa** to liczba wyrzuconych oczek. **Zdarzenie losowe** polega na otrzymaniu jednej spośród sześciu możliwych wartości tej zmiennej. Pojedynczy wynik doświadczenia (np. wypadnięcie szóstki) nazywamy **zdarzeniem elementarnym**. Zbiór wszystkich możliwych wyników doświadczenia losowego nazywamy **przestrzenią zdarzeń elementarnych** i oznaczamy dużą grecką literą omega \omega (\omega ={1, 2, 3, 4, 5, 6})
+Gdy rzucam kostką do gry, **zmienna losowa** to liczba wyrzuconych oczek. **Zdarzenie losowe** polega na otrzymaniu jednej spośród sześciu możliwych wartości tej zmiennej. Pojedynczy wynik doświadczenia (np. wypadnięcie szóstki) nazywamy **zdarzeniem elementarnym**. Zbiór wszystkich możliwych wyników doświadczenia losowego nazywamy **przestrzenią zdarzeń elementarnych** i oznaczamy dużą grecką literą omega \omega (&omega ={1, 2, 3, 4, 5, 6})
