@@ -238,3 +238,39 @@ lub
 ```R
 ppois(10100, 10000)
 ```
+
+
+### Zad. 19
+Dane z zadania:
+
+```
+p = 1/10000         # prawdopodobieństwo pomyłki
+n = 2000            # maksymalną liczbę prób
+k = 0
+```
+
+
+Mamy zatem wszystkie dane aby rozwiązać zadanie używając rozkładu dwumianowego.
+
+```R
+> dbinom(k, n, p)
+[1] 0.818722          # dokładne prawdopodobieństwo
+```
+
+Rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopodobieństwa w rozkładzie dwumianowym przy dużej liczbie prób i niskim prawdopodobieństwie sukcesu, tj. wtedy, gdy iloczy λ = *np* staje się wielkością stała. Jeżeli jest duża liczba prób (czyli *n* >= 100) i prawdopodobieństwo sukcesu jest niskie (*p* <= 0.2) to rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopodobieństwa w rozkładzie dwumianowym.
+
+
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cbinom%7Bn%7D%7Bk%7Dp%5E%7Bk%7Dq%5E%7Bn-k%7D%3D%20%5Cfrac%7B%28np%29%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-np%7D
+" title="\binom{n}{k}p^{k}q^{n-k}= \frac{(np)^{k}}{k!}e^{-np}" />
+
+
+```R
+> lambda = n*p
+> dpois(0, lambda)
+[1] 0.8187308         # przybliżona wartość prawdopodobieństwa
+```
+
+Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzystając z biblioteki TeachingDemos i funkcji vis.binom(). Wyraźne podobieństwo w dwóch rozkładach widoczne jest gdy *n* >= 100 i *p* <= 0.2.
+
+<img src="images/binom_pois.png" alt="Binominal_Poisson">
+
