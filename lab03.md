@@ -101,4 +101,4 @@ Rozkład ten opisuje prawdopodobieństwo zajścia *k* sukcesów w ciągu *n* nie
 
 Funkcję prawdopodobieństwa otrzymania dokładnie *k* sukcesów na *n* prób określa wzór Bernouliego.
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;P(X=k)=P(k,n,p)={n \choosek}p^{k}(1-p)^{{n-k}}\!" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20P%28X%20%3D%20k%29%20%3D%20P%28k%2C%20n%2C%20p%29%20%3D%20%7Bn%20%5Cchoose%20k%7Dp%5E%7Bk%7D%281-p%29%5E%7B%7Bn-k%7D%7D%5C%21" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
