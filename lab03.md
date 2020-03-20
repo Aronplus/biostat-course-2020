@@ -48,7 +48,7 @@ Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. su
 
 Przestrzeń zdarzeń elementarnych:
 
-Ω = {OOO, **OO**R, ORO R**OO**, RRO, ROR, ORR, RRR}
+Ω = {OOO, **OO**R, **O**R**O** R**OO**, RRO, ROR, ORR, RRR}
 
 Prawdopodobieństwo wypadnięcia orła dokładnie dwa razy:
 
