@@ -34,8 +34,11 @@ P(A) = |A| / |Ω| = 2 / 6 = 0.33
 
 Zdarzenia, których prawdopodobieństwo otrzymania wynosi 1 nazywają się zdarzeniami pewnymi. Z kolei, zdarzenia, których prawdopodobieństwo wynosi 0 nazywają się zdarzeniami niemożliwymi.
 
-## Dyskretne rozkłady prawdopodobieństwa
+# Dyskretne rozkłady prawdopodobieństwa
 W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym (np. liczba oczek na kostce, liczba dzieci, liczba pomyłek). Jest to zmienia skokowa, która najczęściej zmienia się o jeden.
+
+## Rozkład dwumianowy
+Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. sukces-porażka, zdrowy-chory, orzeł-reszka, puryna-pirymidyna).
 
 ### Zad. 3
 Ile wynosi prawdopodobieństwo wypadnięcia orła dokładnie dwa razy?
@@ -192,3 +195,14 @@ vis.binom()
 
 Gdy *p* jest większe niż 0.5 to rozkład jest lewoskośny (długi lewy ogon), gdy mniejsze to prawoskośny (długi prawy ogon).
 
+## Rozkład Poissona
+Drugim popularnym typem dyskretnego rozkładu prawdopodobieństwa jest rozkład Poissona. Rozkład ten jest często nazywany rozkładem zdarzeń rzadkich. Tak więc przykłady zmiennych o rozkładzie Poissona to: liczba wypadków na osobę, liczba wygranych w totolotku, liczba awarii występujących w procesie produkcyjnym, liczba zwierząt na pewnym terenie. Te liczby są zgodne z rozkładem Poissona. 
+
+Rozkładu Poissona używamy, kiedy nie jesteśmy w stanie określić, ile maksymalnie zajść zdarzenia może wystąpić w pewnym czasie *t*. W przeciwieństwie do rozkładu dwumianowego, gdzie zlicza się liczbę sukcesów i porażek, w rozkładzie Poissona liczy się jedynie zajście zdarzenia.
+
+Funkcja prawdopodobieństwa ma postać:
+
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20P%28X%3Dk%29%20%3D%20P%28k%2C%20%5Clambda%29%20%3D%20%5Cfrac%7B%5Clambda%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-" title="P(X=k) = P(k, \lambda) = \frac{\lambda^{k}}{k!}e^{-\lambda} = \frac{(np)^{k}}{k!}e^{-np}" />
+
+
+Parametr  jest wartością oczekiwaną (średnią) w tym rozkładzie, natomiast *k* oznacza liczbę zajść pewnego zdarzenia.
