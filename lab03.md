@@ -462,7 +462,10 @@ Rozkład t-Studenta (William Gosset, angielski chemik i statystyk o pseudonimie 
 
 <img src="images/tstudent-equation.png" alt="tStudent">
 
-Gdzie *X* ~ N(0, 1) oraz *Y* ~ χ2(*n*) są niezależnymi zmiennymi losowymi. Tak więc konstrukcja tego rozkładu odbywa się w oparciu o rozkład normalny i chi-kwadrat. Funkcja gęstości ma skomplikowaną postać analityczną, a jej wykres można obejrzeć przy użyciu pakietu TeachingDemos. 
+Gdzie *X* ~ N(0, 1) oraz *Y* ~ χ2(*n*) są niezależnymi zmiennymi losowymi. Tak więc konstrukcja tego rozkładu odbywa się w oparciu o rozkład normalny i chi-kwadrat.
+
+### Zad. 31
+Funkcja gęstości ma skomplikowaną postać analityczną, a jej wykres można obejrzeć przy użyciu pakietu TeachingDemos. 
 
 ```R
 vis.t()
@@ -471,3 +474,6 @@ vis.t()
 Rozkład t jest symetryczny względem zera, a jego ogólny kształt jest podobny do kształtu standardowego rozkładu normalnego. Gdy *n* > 30 rozkład t jest już bardzo zbliżony do rozkładu normalnego
 
 Testu t-Studenta będziemy używać w testowaniu hipotez (np. gdy będziemy sprawdzać czy istnieją istotne różnice w ekspresji genu między chorymi pacjentami a ludźmi zdrowymi). Z testu t-Studenta korzystamy, gdy nasze próby mają niewielką liczebność (n <= 30). W przypadku prób o większej liczebności, rozkład ten jest bardzo zbliżony do standardowego rozkładu normalnego.
+
+
+### Zad. 32
