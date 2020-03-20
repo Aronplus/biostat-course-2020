@@ -287,7 +287,7 @@ Inaczej rozkład prostokątny. Jest to rozkład prawdopodobieństwa, dla któreg
 
 Na przykład, rozkład jednostajny, w którym *a* = 1 i *b* = 3.
 <img src="images/uniform_distribution.png" alt="Uniform distribution" width="400px">
- 
+
 Prawdopodobieństwo uzyskania konkretnej wartości między 1 i 3 wynosi 0. Pole pod krzywą to prawdopodobieństwo całkowite wynoszące 1.
 
 
@@ -323,5 +323,16 @@ vis.normal()
 
 W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie (po dwóch 68.28%). 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli średnia = 0, a odchylenie standardowe = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
 
+
+### Zad. 22
+samodzielnie
+
+
+### Zad. 23
+Prawdopodobieństwo otrzymania wartości mniejszej niż 1 w rozkładzie normalnym (μ = 0, σ = 1) wynosi:
+
+```R
+pnorm(1, mean=0, sd=1)
+```
 
 
