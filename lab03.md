@@ -429,7 +429,7 @@ vis.gamma()                 # 1. Zaznacz 'Show Chi-squared distribution'
 ```
 Rozkład chi-kwadrat powstaje poprzez losowanie zmiennych losowych ze standardowego rozkładu normalnego N(0,1) i zsumowaniu ich kwadratów.
 
-<img src="https://latex.codecogs.com/png.latex?%5Clarge%20Y%20%3D%20X_%7B1%7D%5E%7B2%7D%20&plus;%20X_%7B2%7D%5E%7B2%7D%20&plus;%20..%20&plus;%20X_%7Bn%7D%5E%7B2%7D" title="Y = X_{1}^{2} + X_{2}^{2} + .. + X_{n}^{2}" />
+<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20Y%20%3D%20X_%7B1%7D%5E%7B2%7D%20&plus;%20X_%7B2%7D%5E%7B2%7D%20&plus;%20..%20&plus;%20X_%7Bn%7D%5E%7B2%7D" title="Y = X_{1}^{2} + X_{2}^{2} + .. + X_{n}^{2}" />
 
 Gdzie zmienne losowe *X*<sub>i</sub> ~ *N*(0,1) są niezależne. Wtedy zmienna losowa Y ma rozkład χ2(*n*), gdzie *n* jest liczbą stopni swobody (w tym przypadku jest to liczba obserwacji). Rozkład chi-kwadrat dla jednego stopnia swobody powstaje po prostu podniesienie do kwadratu wylosowanego Z-score. 
 
@@ -440,3 +440,5 @@ Kształt rozkładu zależy od liczby stopni swobody *n*. Im więcej obserwacji w
 Rozkład chi-kwadrat ma liczne zastosowanie w statystyce - będziemy go używać w testach niezależności i zgodności. Poza tym rozkład jest wykorzystywany do konstrukcji innych rozkładów na przykład rozkładu t-Studenta.
 
 
+### Zad. 29
+Liczba stopni swobody (*df*) w rozkładzie Chi-kwadrat jest równa liczbie losowanych obseracji *n*.
