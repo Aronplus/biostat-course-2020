@@ -304,6 +304,23 @@ punif(12.5, 0, 15)
 qunif(0.9, 0, 15)
 ```
 
+## Rozkład normalny
+Rozkład normalny zwany jest także rozkładem Gaussa. Rozkład ten ma charakterystyczny kształt "krzywej dzwonowej" i jest symetryczny względem średniej (średnia jest na środku). 
+
+Jest to teoretyczny rozkład prawdopodobieństwa powszechnie wykorzystywany do modelowania wielu zjawisk przyrodniczych, ekonomicznych itd. Zmienne losowe, które podlegają rozkładowi normalnemu zależą od wielu czynników (a formalnie od nieskończonej liczby innych niezależnych zmiennych losowych). Przykładowo, istnieje prawie nieograniczona liczba czynników warunkujących wzrost człowieka (np. sposób odżywiania, predyspozycje genetyczne, przebyte choroby, poziom hormonu wzrostu itd.). Tak więc należy się̨ spodziewać, że w populacji wzrost podlega rozkładowi normalnemu - najwięcej mamy ludzi średniego wzrostu, mało ludzi bardzo niskich i mało ludzi bardzo wysokich.
+
+Kształt rozkładu zależy od dwóch parametrów: średniej i odchylenia standardowego.
+
+```R
+library("TeachingDemos")
+vis.normal()
+```
+
+Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większy, tym bardziej spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
+
+<img src="images/normal_distribution.png" alt="Normal distribution"> 
+
+W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie (po dwóch 68.28%). 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli średnia = 0, a odchylenie standardowe = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
 
 
 
