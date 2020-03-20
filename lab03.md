@@ -210,6 +210,15 @@ Parametr λ jest wartością oczekiwaną (średnią) w tym rozkładzie, natomias
 ### Zad. 17
 Dane z zadania:
 
+* λ = 2
+* *k* = 3
+
+Obliczenie prawdopodobieństwa wprowadzenia 3 błędnych nukleotydów podczas replikacji DNA człowieka.
+
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20P%28X%3D3%29%20%3D%20P%283%2C%202%29%20%3D%20%5Cfrac%7B2%5E%7B3%7D%7D%7B3%21%7De%5E%7B-2%7D%20%3D%200.180447" title="P(X=3) = P(3, 2) = \frac{2^{3}}{3!}e^{-2} = 0.180447" />
+
+W R:
+
 ```R
 > lambda = 2
 > k = 3
