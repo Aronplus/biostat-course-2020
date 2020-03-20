@@ -220,18 +220,6 @@ Obliczenie prawdopodobieństwa wprowadzenia 3 błędnych nukleotydów podczas re
 W R:
 
 ```R
-> lambda = 2
-> k = 3
-```
-
-Podstawienie do wzoru.
-
-```R
-> lambda^k/factorial(k) * exp(-lambda)
-```
-
-lub krócej:
-
-```R
 > dpois(3, 2)
+[1] 0.180447
 ```
