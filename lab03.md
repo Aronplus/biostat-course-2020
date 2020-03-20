@@ -110,18 +110,64 @@ Obliczmy prawdopodobieństwo wypadnięcia 2 orłów w trzech rzutach monetą.
 W programie R jest funkcja `dbinom`, która oblicza prawdopodobieństwo jeżeli podamy *k*, *n* i *p*.
 
 ```R
-> dbinom(2, 3, 0.5)        # Funkcja prawdopodobieństwa
-[1] 0.375
+> dbinom(2, 3, 0.5)            # Funkcja prawdopodobieństwa
+[1] 0.375                      # Prawdop. wypadnięcia orła dokładnie 2 razy.
 ```
 
 Jakie jest prawdopodobieństwo, że orzeł wypadnie przynajmniej raz?
 
 ```R
 > dbinom(1:3, 3, 0.5)
-[1] 0.375 0.375 0.125
-> sum(dbinom(1:3, 3, 0.5))
+[1] 0.375 0.375 0.125          # Prawdop. wypadnięcia orła 1, 2 i 3 razy  
+> sum(dbinom(1:3, 3, 0.5))     # Suma wartości tych prawdopodobieństw
 [1] 0.875
 ```
 
 Ile zatem wynosi prawdopodobieństwo, że w 5 rzutach kostkach, szóstka wypadnie dokładnie dwa razy?
 
+
+### Zad. 9
+samodzielnie
+
+### Zad. 10
+samodzielnie
+
+### Zad. 11
+samodzielnie
+
+### Zad. 12
+Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 0.8. Oblicz: 
+
+1. wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4)
+
+   ```R
+   dbinom(0:4, 4, 0.8)
+   ```
+2. wartość oczekiwaną celnych rzutów do kosza
+
+   ```R
+   4 * 0.8       # E(X) = n * p
+   ```
+
+   lub:
+
+   ```R
+   x = 0:4
+   y = dbinom(x, 4, 0.8)
+   sum(x * y)
+   ```
+
+3. wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy.
+
+   ```R
+   sum(dbinom(0:3, 4, 0.8))
+   ```
+   
+   lub
+
+   ```R
+   pbinom(3, 4, 0.8)   # Dystrybuanta. Odpowiada ona na pytanie ile wynosi 
+                       # prawdop. znalezienia wartości mniejszej bądź równej
+                       # od danej wartości X 
+
+   ```
