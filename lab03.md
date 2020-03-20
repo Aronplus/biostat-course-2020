@@ -505,7 +505,7 @@ Centralne Twierdzenie Graniczne daje nam dwie zależności matematyczne:
 
 2. Odchylenie standardowe w uzyskanym rozkładzie normalnym jest równe: 
 
-   <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Csigma_%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D" title="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" />
+   <img src="images/Central_Limit_Theorem_sd.png" title="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" />
 
 3. Twierdzenie Graniczne działa dla każdego parametru (nie tylko średniej): np. mediany, sumy liczb, dominanty, rozstępu.
 
