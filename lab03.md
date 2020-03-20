@@ -335,4 +335,86 @@ Prawdopodobieństwo otrzymania wartości mniejszej niż 1 w rozkładzie normalny
 pnorm(1, mean=0, sd=1)
 ```
 
+### Zad. 24
+Poniżej jakiej wartości zmiennej X znajduje się 90% obserwacji.
+
+```R
+> qnorm(0.9, mean=0, sd=1)
+```
+
+### Zad. 25
+Skorzystaj z `vis.norm()` i ustaw rozkład dla μ = 1.9 i σ = 0.5.
+
+1. Widać gołym okiem. Dla formalności:
+
+   ```R
+   pnorm(1.9, 1.9, 0.5)
+   ```
+
+2. Mniejszej lub równej 2.2.
+
+   ```R
+   pnorm(2.2, 1.9, 0.5)
+   ```
+
+3. Większej od 2.2.
+
+   ```R
+   1 - pnorm(2.2, 1.9, 0.5)
+   ```
+
+4. Na poziomie 1.4-2.4.
+
+   ```R
+   pnorm(2.4, 1.9, 0.5) - pnorm(1.4, 1.9, 0.5)
+   ```
+
+5. Poniżej jakiego poziomu ekspresji znajduje się 75% genów.
+
+   ```R
+   qnorm(0.75, 1.9, 0.5)
+   ```
+
+### Zad. 26
+samodzielnie
+
+
+### Zad. 27
+Wczytanie danych do wektora.
+
+```R
+vec = scan('http://www.combio.pl/files/aln_scores.txt')
+```
+
+1. Utworzenie histogramu tych danych.
+   
+   ```R
+   hist(vec)
+   ```
+
+2. Obliczenie średniej i odchylenia standardowego.
+
+   ```R
+   mean(vec)
+   sd(vec)
+   ```
+
+3. Standaryzacja danych.
+
+   ```R
+   vec.z = scale(vec)
+   mean(vec.z)
+   sd(vec.z)
+   hist(vec.z)
+   ```
+
+4. Samodzielnie
+
+**Wykres kwantyl-kwantyl (QQ)**: Przy sprawdzaniu, czy dane mają rozkład normalny bardzo często korzysta się z wykresów kwantylowych, w których na jednej osi X umieszczone są kwantyle teoretyczne rozkładu normalnego wyestymowane z próby, a na osi Y kwantye próbkowanego rozkładu. Jeżeli zmienna ma idealnie zadany rozkład, wykres przedstawia dokładną prostą. Odchyłki od prostej wskazują na określone typy odchylenia np. skośny, spłaszczony.
+
+```R
+qqnorm(x)
+qqline(x)
+```
+
 
