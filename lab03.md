@@ -274,6 +274,9 @@ Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzysta
 <img src="images/binom_pois.png" alt="Binominal_Poisson">
 
 
+### Zad. 20
+samodzielnie
+
 # Ciągłe rozkłady prawdopodobieństwa
 W odróżnieniu od dyskretnych rozkładów prawdopodobieństwa, w których zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym, w rozkładach ciągłych zmienna losowa może przyjmować wartości ciągłe (czyli dowolne wartości zmiennoprzecinkowe). 
 
@@ -281,4 +284,26 @@ W ciągłym rozkładzie prawdopodobieństwa nie zadajemy już pytania, o prawdop
 
 ## Rozkład jednostajny
 Inaczej rozkład prostokątny. Jest to rozkład prawdopodobieństwa, dla którego gęstość prawdopodobieństwa w przedziale od *a* do *b* jest stała i różna od zera, a poza nim równa zeru.
+
+Na przykład, rozkład jednostajny, w którym *a* = 1 i *b* = 3.
+<img src="images/uniform_distribution.png" alt="Uniform distribution" width="500px"> 
+Prawdopodobieństwo uzyskania konkretnej wartości między 1 i 3 wynosi 0. Pole pod krzywą to prawdopodobieństwo całkowite wynoszące 1.
+
+
+### Zad. 21
+
+1. Prawdopodobieństwo czekania mniej niż 12.5 minuty wynosi:
+
+```R 
+punif(12.5, 0, 15)
+```
+
+2. Poniżej jakiej wartości czasu czekamy 90% razy. Jest to pytanie o kwantyl rzędu 90% (percentyl 9) z zadanego rozkładu.
+
+```R
+qunif(0.9, 0, 15)
+```
+
+
+
 
