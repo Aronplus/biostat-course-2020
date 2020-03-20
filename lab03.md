@@ -48,7 +48,6 @@ Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. su
 Przestrzeń zdarzeń elementarnych:
 
 Ω = {OOO, **OO**R, ORO R**OO**, RRO, ROR, ORR, RRR}
-> O: orzeł, R: reszka
 
 Prawdopodobieństwo wypadnięcia orła dokładnie dwa razy:
 
@@ -62,6 +61,8 @@ P(X = 2) = 3/8
 samodzielnie
 
 ### Zad. 5
+>Narysuj w R wykres funkcji prawdopodobieństwa pojawienia się orła dokładnie 0, 1, 2, 3 razy w trzech rzutach monetą.
+
 Przestrzeń zdarzeń elementarnych dla trzech rzutów monetą wynosi:
 
 Ω = {OOO, OOR, ORO, ROO, RRO, ROR, ORR, RRR}
@@ -85,13 +86,15 @@ barplot(y, names.arg = x)
 ```
 
 ### Zad. 6
-Prawdopodobieństwo, że orzeł wypadnie przynajmniej jeden raz:
+>Jakie jest prawdopodobieństwo, że w trzech rzutach monetą orzeł wypadnie przynajmniej jeden raz?
 
 ```
 P(X >= 1) = 3/8 + 3/8 + 1/8 = 7/8
 ```
 
 ### Zad. 7
+>Oblicz wartość oczekiwaną liczby wypadnięć orła w trzech rzutach monetą. 
+
 Wartość oczekiwana liczby wypadnięć orła to:
 
 ```
@@ -112,7 +115,9 @@ E(X) = n * p = 3 * 0.5
 
 
 ### Zad. 8
-Rzucasz 5 razy kostką do gry i chciał(a)byś wiedzieć ile wynosi prawdopodobieństwo, że szóstka wypadnie dokładnie dwa razy. Zamiast wypisywać wszystkie kombinacje zdarzeń elementarnych (Ω = {11111, 11112, ..}), korzystamy z rozkładu dwumianowego.
+>Rzucasz 5 razy sześcienną kostką do gry. Jakie jest prawdopodobieństwo, że szóstka wypadnie: (1) dokładnie dwa razy, (2) co najwyżej dwa razy?
+
+Zamiast wypisywać wszystkie kombinacje zdarzeń elementarnych (Ω = {11111, 11112, ..}), korzystamy z rozkładu dwumianowego.
 
 Rozkład ten opisuje prawdopodobieństwo zajścia *k* sukcesów w ciągu *n* niezależnych prób (zdarzeń losowych), z których każda próba ma stałe prawdopodobieństwo sukcesu równe *p*. Innymi słowy, o tym rozkładzie mówimy wtedy, kiedy mamy *n* niezależnych doświadczeń losowych (np. 3 rzuty monetą), w których prawdopodobieństwo sukcesu (zajścia określonego zdarzenia np. wypadnięcia orła) w każdym doświadczeniu jest stałe i niezależne od wyników poprzednich i równe *p* (np. wynosi 0.5).
 
@@ -144,24 +149,26 @@ Ile wynosi prawdopodobieństwo, że w 5 rzutach kostkach:
 1. szóstka wypadnie dokładnie dwa razy?
 2. szóstka wypadnie co najwyżej dwa razy?
 
-### Zad. 9
-samodzielnie
+### Zad. 9 (samodzielnie)
+>Narysuj wykres rozkład funkcji prawdopodobieństwa pojawienia się szóstki w 5 rzutach (tj. pojawienia się 0, 1, 2, 3, 4, 5 razy). Wzrokowo określ asymetrię tego rozkładu.
 
-### Zad. 10
-samodzielnie
 
-### Zad. 11
-samodzielnie
+### Zad. 10 (samodzielnie)
+>Jeżeli kobieta i mężczyzna są nosicielami genu albinizmu to prawdopodobieństwo, że ich dziecko rodzi się dotknięte bielactwem wynosi 1/4. Jakie jest prawdopodobieństwo, że spośród trójki ich dzieci dokładnie jedno będzie chore?
+
+
+### Zad. 11 (samodzielnie)
+>Niech prawdopodobieństwo, że mikroorganizm przeżyje w środowisku testowym wynosi 3%. Jakie jest prawdopodobieństwo, że wśród 200 mikroogranizmów dokładnie 5 przeżyje?
 
 ### Zad. 12
-Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 0.8. Oblicz: 
+>Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 0.8. Oblicz: (1) wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4), (2) wartość oczekiwaną celnych rzutów do kosza, (3) wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy. 
 
-1. wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4)
+1. Wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4)
 
    ```R
    dbinom(0:4, 4, 0.8)
    ```
-2. wartość oczekiwaną celnych rzutów do kosza
+2. Wartość oczekiwaną celnych rzutów do kosza
 
    ```R
    4 * 0.8       # E(X) = n * p
@@ -175,7 +182,7 @@ Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 
    sum(x * y)
    ```
 
-3. wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy.
+3. Wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy.
 
    ```R
    sum(dbinom(0:3, 4, 0.8))
@@ -190,17 +197,18 @@ Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 
 
    ```
 
-### Zad. 13
-samodzielnie
+### Zad. 13 (samodzielnie)
+>W cząsteczkach miRNA o długości 22 nukleotydów puryny występują z częstością 0.7. Utwórz wykres pokazujący rozkład prawdopodobieństwa występowania cząsteczek miRNA zbudowanych kolejno z: 0, 1, .. 22 puryn. Zatytułuj: wykres (miRNA probability), oś X jako (Number of purins), oś Y (Probability). Określ asymetrię rozkładu.
 
-### Zad. 14
-samodzielnie
 
-### Zad. 15
-samodzielnie
+### Zad. 14 (samodzielnie)
+>Ile wynosi prawdopodobieństwo uzyskania cząsteczki miRNA zbudowanej z co najwyżej 13 puryn. 
+
+### Zad. 15 (samodzielnie)
+>Ile wynosi prawdopodobieństwo uzyskania cząsteczki miRNA zbudowanej z przynajmniej 10 puryn.
 
 ### Zad. 16
-Wyświetl rozkład dwumianowy w R.
+>Używając biblioteki TeachingDemos wyświetl dwumianowy rozkład prawdopodobieństwa. Jak zmienia się asymetria rozkładu kiedy p < 0.5 i kiedy p > 0.5.
 
 ```R
 library("TeachingDemos")              # Załaduj pakiet
@@ -223,6 +231,8 @@ Parametr λ jest wartością oczekiwaną (*np*) w tym rozkładzie, natomiast *k*
 
 
 ### Zad. 17
+>Polimeraza DNA wprowadza średnio dwa błędne nukleotydy podczas replikacji genomu człowieka. Jakie jest prawdopodobieństwo, że wprowadzi trzy błędne nukleotydy?
+
 Dane z zadania:
 
 * λ = 2
@@ -240,6 +250,8 @@ W R:
 ```
 
 ### Zad. 18
+>Średnia liczba odwiedzin serwisu BLAST w ciągu godziny to 10 tys. użytkowników. Jakie jest prawdopodobieństwo, że serwis w ciągu godziny odwiedzi co najwyżej 10 100 osób? 
+
 Dane z zadania:
 * λ = 10000
 * k = 10100
@@ -254,8 +266,9 @@ lub
 ppois(10100, 10000)
 ```
 
-
 ### Zad. 19
+>Używasz nowej technologii sekwencjonowania, którą charakteryzuje niewielki odsetek błędnie wprowadzonych nukleotydów (1 pomyłka na 10 000 pz). Sekwencjonujesz odcinek genomu długości 2000 pz. Jakie jest prawdopodobieństwo otrzymania bezbłędnej sekwencji? 
+
 Dane z zadania:
 
 ```
@@ -263,7 +276,6 @@ p = 1/10000         # prawdopodobieństwo pomyłki
 n = 2000            # maksymalną liczbę prób
 k = 0
 ```
-
 
 Mamy zatem wszystkie dane aby rozwiązać zadanie używając rozkładu dwumianowego.
 
@@ -287,8 +299,8 @@ Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzysta
 <img src="images/binom_pois.png" alt="Binominal_Poisson">
 
 
-### Zad. 20
-samodzielnie
+### Zad. 20 (samodzielnie)
+>Oblicz prawdopodobieństwo wylosowania co najwyżej trzech osób leworęcznych w 200 losowaniach, jeśli wiadomo, że prawdopodobieństwo spotkania osoby leworęcznej w pewnej populacji ludzi wynosi 0.05.
 
 # Ciągłe rozkłady prawdopodobieństwa
 W odróżnieniu od dyskretnych rozkładów prawdopodobieństwa, w których zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym, w rozkładach ciągłych zmienna losowa może przyjmować wartości ciągłe (czyli dowolne wartości zmiennoprzecinkowe). 
@@ -305,6 +317,7 @@ Prawdopodobieństwo uzyskania konkretnej wartości między 1 i 3 wynosi 0. Pole 
 
 
 ### Zad. 21
+>Czas oczekiwania na autobus na pewnym przystanku ma rozkład jednostajny na odcinku pomiędzy 0 i 15 minut. (1) Jakie jest prawdopodobieństwo, że osoba będzie czekała mniej niż 12,5 minuty? (2) Poniżej jakiej wartości czasu czekamy 90% razy?
 
 1. Prawdopodobieństwo czekania mniej niż 12.5 minuty wynosi:
 
@@ -337,25 +350,27 @@ vis.normal()
 W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie (po dwóch 68.28%). 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli średnia = 0, a odchylenie standardowe = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
 
 
-### Zad. 22
-samodzielnie
+### Zad. 22 (samodzielnie)
+>Ile wynosi prawdopodobieństwo otrzymania wartości mniejszej niż 1 w rozkładzie normalnym (μ = 0, σ = 1)?
 
 
 ### Zad. 23
-Prawdopodobieństwo otrzymania wartości mniejszej niż 1 w rozkładzie normalnym (μ = 0, σ = 1) wynosi:
+>Odpowiedz na pytanie z poprzedniego zadania w formie kodu R.
 
 ```R
 pnorm(1, mean=0, sd=1)
 ```
 
 ### Zad. 24
-Poniżej jakiej wartości zmiennej X znajduje się 90% obserwacji.
+>Biorąc pod uwagę rozkład z zad. 22, odpowiedz poniżej jakiej wartości zmiennej znajduje się 90% obserwacji?
 
 ```R
 > qnorm(0.9, mean=0, sd=1)
 ```
 
 ### Zad. 25
+>Rozkład poziomu ekspresji genu CCND3 jest normalny o  μ=1.9 i σ=0.5. Ile wyniesie prawdopodobieństwo, że dany gen ulega ekspresji: (1) mniejszej lub równej 1.9? (2) mniejszej lub równej 2.2? (3) większej od 2.2? (4) na poziomie 1.4-2.4? (5) poniżej jakiego poziomu ekspresji znajduje się 75% genów? 
+
 Skorzystaj z `vis.norm()` i ustaw rozkład dla μ = 1.9 i σ = 0.5.
 
 1. Widać gołym okiem. Dla formalności:
@@ -388,11 +403,13 @@ Skorzystaj z `vis.norm()` i ustaw rozkład dla μ = 1.9 i σ = 0.5.
    qnorm(0.75, 1.9, 0.5)
    ```
 
-### Zad. 26
-samodzielnie
+### Zad. 26 (samodzielnie)
+>Aby ubiegać się o przyjęcie do stowarzyszenia Mensa skupiającego osoby o wysokim ilorazie inteligencji należy uzyskać co najmniej 148 punktów w skali Cattela. Wyniki skali Cattela mają w populacji rozkład normalny  μ = 100 i σ = 24. (1) Jaki procent populacji ma szansę stać się członkami towarzystwa? (2) Poniżej jakiej wartości IQ znajduje się 90% społeczeństwa?
 
 
 ### Zad. 27
+>W pliku http://www.combio.pl/files/aln_scores.txt znajduje się 10 tys. punktacji dopasowań między sekwencjami cząsteczek miRNA. Wykonaj następujące polecenia i odpowiedz na pytania: (1) Utwórz histogram tych danych. Czy dane są zbliżone do rozkładu normalnego? (2) Ile wynosi średnia i odchylenie standardowe. (3) Dokonaj standaryzacji danych (zamiana na Z-scores). Dla wartości wystandaryzowanych utwórz histogram oraz oblicz średnią i odchylenie standardowe. (4) Czy standaryzacja danych zmienia kształt rozkładu? 
+
 Wczytanie danych do wektora.
 
 ```R
@@ -448,16 +465,20 @@ Gdzie zmienne losowe *X*<sub>i</sub> ~ *N*(0,1) są niezależne. Wtedy zmienna l
 
 
 ### Zad. 28
+>Korzystając z biblioteki TeachingDemos przedstaw wykres funkcji gęstości rozkładu chi-kwadrat. Od czego zależy kształt tego rozkładu? 
+
 Kształt rozkładu zależy od liczby stopni swobody *n*. Im więcej obserwacji wybieram (zwiększam *shape* – liczbę stopniu swobody) wykres zmienia się z prawoskośnego na bardziej dzwonowaty przypominający rozkład normalny. Dla małych wartości *n* rozkład jest silnie asymetryczny. W miarę wzrostu *n*, wykres staje się coraz bardziej symetryczny i podobny do rozkładu normalnego.
 
 Rozkład chi-kwadrat ma liczne zastosowanie w statystyce - będziemy go używać w testach niezależności i zgodności. Poza tym rozkład jest wykorzystywany do konstrukcji innych rozkładów na przykład rozkładu t-Studenta.
 
 
 ### Zad. 29
+>Losujesz 12 obserwacji z rozkładu N(0, 1), podnosisz każdą do kwadratu i sumujesz otrzymane kwadraty. Ile stopni swobody będzie posiadał taki rozkład chi-kwadrat? 
+
 Liczba stopni swobody (*df*) w rozkładzie Chi-kwadrat jest równa liczbie losowanych obseracji *n*.
 
 ### Zad. 30
-Ile wynosi prawdopodobieństwo, że otrzymana wartość będzie:
+>Losujesz 3 obserwacje z rozkładu N(0,1), podnosisz każdą do kwadratu i sumujesz otrzymane kwadraty. Ile wynosi prawdopodobieństwo, że otrzymana wartość będzie (1) mniejsza lub równa 9, (2) większa lub równa 9.
 
 1. mniejsza lub równa 9
 
@@ -478,6 +499,8 @@ Rozkład t-Studenta (William Gosset, angielski chemik i statystyk o pseudonimie 
 Gdzie *X* ~ N(0, 1) oraz *Y* ~ χ2(*n*) są niezależnymi zmiennymi losowymi. Tak więc konstrukcja tego rozkładu odbywa się w oparciu o rozkład normalny i chi-kwadrat.
 
 ### Zad. 31
+>Korzystając z biblioteki TeachingDemos przedstaw wykres funkcji gęstości rozkładu t-Studenta. Od czego zależy kształt tego rozkładu? 
+
 Funkcja gęstości ma skomplikowaną postać analityczną, a jej wykres można obejrzeć przy użyciu pakietu TeachingDemos. 
 
 ```R
@@ -490,13 +513,15 @@ Testu t-Studenta będziemy używać w testowaniu hipotez (np. gdy będziemy spra
 
 
 ### Zad. 32
-Wylosowanie 1000 liczb z rozkładu t-Studenta dla 10 stopni swobody.
+>Wylosuj 10 tys. zmiennych losowych z rozkładu t-Studenta dla 10 stopni swobody i narysuj histogram. 
 
 ```R
-rt(10000, df=10)
+rt(10000, df=10)  # Wylosowanie 10 tys. liczb
 ```
 
 ### Zad. 33
+>Ile wynosi prawdopodobieństwo znalezienia wartości mniejszych lub równych 1 w rozkładzie t-Studenta z 10 stopniami swobody. 
+
 Prawdopodobieństwo znalezienia wartości mniejszych lub równych 1 w rozkładzie t-Studenta z 10 stopniami swobody wynosi:
 
 ```R
@@ -522,6 +547,7 @@ Centralne Twierdzenie Graniczne daje nam dwie zależności matematyczne:
 
 3. Twierdzenie Graniczne działa dla każdego parametru (nie tylko średniej): np. mediany, sumy liczb, dominanty, rozstępu.
 
-
+### Zad. 34 (samodzielnie)
+> Sprawdź, jak działa w praktyce CTG przeprowadzając symulację http://www.ltcconline.net/greenl/java/Statistics/clt/cltsimulation.html dla: (a) rozkładu jednostajnego (b) rozkładu prawostronnego i (c) swojego narysowanego rozkładu.
 
 
