@@ -20,6 +20,8 @@ Zbiór wszystkich możliwych wyników doświadczenia losowego nazywamy **przestr
 ```
 
 ### Zad. 2
+>Zapisz zdarzenie elementarne i oblicz prawdopodobieństwo wyrzucenia: (1) parzystej liczby oczek, (2) co najwyżej 4 oczek, (3) dokładnie 4 oczek, (4) co najmniej 1 oczka, (5) więcej niż 6 oczek.
+
 Zdarzenia elementarne przyjęło się oznaczać wielkimi literami z początku alfabetu (A,B,C). Na przykład zdarzenie elementarne polegające na wyrzuceniu pięciu lub sześciu oczek w rzucie kostką zapiszemy: 
 
 ```
@@ -41,6 +43,8 @@ W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończon
 Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. sukces-porażka, zdrowy-chory, orzeł-reszka, puryna-pirymidyna).
 
 ### Zad. 3
+>Rzucasz trzy razy monetą. Ile wynosi prawdopodobieństwo wypadnięcia orła dokładnie dwa razy?
+
 Przestrzeń zdarzeń elementarnych:
 
 Ω = {OOO, **OO**R, ORO R**OO**, RRO, ROR, ORR, RRR}
@@ -53,7 +57,9 @@ P(X = 2) = 3/8
 ```
 
 ### Zad. 4
-Samodzielnie
+>Ile wynosi prawdopodobieństwo otrzymania zero orłów w rzucie z poprzedniego zadania?
+
+samodzielnie
 
 ### Zad. 5
 Przestrzeń zdarzeń elementarnych dla trzech rzutów monetą wynosi:
