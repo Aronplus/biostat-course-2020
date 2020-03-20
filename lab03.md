@@ -47,4 +47,58 @@ Ile wynosi prawdopodobieństwo wypadnięcia orła dokładnie dwa razy?
 P(X = 2) = 3/8
 ```
 
+### Zad. 4
+Samodzielnie
 
+### Zad. 5
+Podczas trzech rzutów monetą prawdopodobieństwo:
+- wypadnięcia orła 0 razy: P(X = 0) = 1/8 
+- wypadnięcia orła 1 raz: P(X = 1) = 3/8
+- wypadnięcia orła 2 razy: P(X = 2) = 3/8
+- wypadnięcia orła 3 razy: P(X = 3) = 1/8
+
+Prawdopodobieństwa zdarzeń elementarnych muszą się sumować do 1.
+
+```R
+x = c(0, 1, 2, 3)
+y = c(1/8, 3/8, 3/8, 1/8)
+plot(x, y)
+plot(x, y, type="h")
+barplot(y, names.arg = x)
+```
+
+### Zad. 6
+Prawdopodobieństwo, że orzeł wypadnie przynajmniej jeden raz:
+
+```
+P(X >= 1) = 3/8 + 3/8 + 1/8 = 7/8
+```
+
+### Zad. 7
+Wartość oczekiwana liczby wypadnięć orła to:
+
+```
+E(X) = 0 * 1/8 + 1 * 3/8 + 2 * 3/8 + 4 * 1/8
+```
+
+W R:
+
+```R
+sum(x*y)
+```
+
+Szybsze rozwiązanie: liczba rzutów *n* razy prawdopodobieństwo wypadnięcia orła.
+
+```
+E(X) = n * p = 3 * 0.5
+```
+
+
+### Zad. 8
+Rzucam 5 razy kostką do gry i chciałbym wiedzieć jakie jest prawdopodobieństwo, że szóstka wypadnie dokładnie dwa razy. Zamiast wypisywać wszystkie kombinacje zdarzeń elementarnych (Ω = {11111, 11112, ..}), korzystamy z rozkładu dwumianowego.
+
+Rozkład ten opisuje prawdopodobieństwo zajścia *k* sukcesów w ciągu *n* niezależnych prób (zdarzeń losowych), z których każda próba ma stałe prawdopodobieństwo sukcesu równe *p*. Innymi słowy, o tym rozkładzie mówimy wtedy, kiedy mamy *n* niezależnych doświadczeń losowych (np. 3 rzuty monetą), w których prawdopodobieństwo sukcesu (zajścia określonego zdarzenia np. wypadnięcia orła) w każdym doświadczeniu jest stałe i niezależne od wyników poprzednich i równe *p* (np. wynosi 0.5).
+
+Funkcję prawdopodobieństwa otrzymania dokładnie *k* sukcesów na *n* prób określa wzór Bernouliego.
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
