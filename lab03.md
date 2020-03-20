@@ -89,7 +89,7 @@ barplot(y, names.arg = x)
 >Jakie jest prawdopodobieństwo, że w trzech rzutach monetą orzeł wypadnie przynajmniej jeden raz?
 
 ```
-P(X >= 1) = 3/8 + 3/8 + 1/8 = 7/8
+P(X >= 1) = 3/8 + 3/8 + 1/8
 ```
 
 ### Zad. 7
