@@ -260,8 +260,7 @@ Mamy zatem wszystkie dane aby rozwiązać zadanie używając rozkładu dwumianow
 Rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopodobieństwa w rozkładzie dwumianowym przy dużej liczbie prób i niskim prawdopodobieństwie sukcesu, tj. wtedy, gdy iloczy λ = *np* staje się wielkością stała. Jeżeli jest duża liczba prób (czyli *n* >= 100) i prawdopodobieństwo sukcesu jest niskie (*p* <= 0.2) to rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopodobieństwa w rozkładzie dwumianowym.
 
 
-<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cbinom%7Bn%7D%7Bk%7Dp%5E%7Bk%7Dq%5E%7Bn-k%7D%3D%20%5Cfrac%7B%28np%29%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-np%7D
-" title="\binom{n}{k}p^{k}q^{n-k}= \frac{(np)^{k}}{k!}e^{-np}" />
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cbinom%7Bn%7D%7Bk%7Dp%5E%7Bk%7Dq%5E%7Bn-k%7D%3D%20%5Cfrac%7B%28np%29%5E%7Bk%7D%7D%7Bk%21%7De%5E%7B-np%7D" title="\binom{n}{k}p^{k}q^{n-k}= \frac{(np)^{k}}{k!}e^{-np}" />
 
 
 ```R
