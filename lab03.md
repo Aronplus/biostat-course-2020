@@ -6,6 +6,7 @@ Wiele zjawisk biologicznych czy ekonomicznych można wymodelować probabilistycz
 # Podstawowe pojęcia w rachunku prawdopodobieństwa
 
 ### Zad. 1
+>Przyporządkuj terminy do definicji 
 
 Gdy rzucasz kostką do gry, **zmienna losowa** to liczba wyrzuconych oczek. 
 
