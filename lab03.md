@@ -40,7 +40,7 @@ Zdarzenia, których prawdopodobieństwo otrzymania wynosi 1 nazywają się zdarz
 # Dyskretne rozkłady prawdopodobieństwa
 W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym (np. liczba oczek na kostce, liczba dzieci, liczba pomyłek). Jest to zmienia skokowa, która najczęściej zmienia się o jeden.
 
-## Rozkład dwumianowy
+## Rozkład dwumianowy (*Binomial distribution*)
 Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. sukces-porażka, zdrowy-chory, orzeł-reszka, puryna-pirymidyna).
 
 ### Zad. 3
@@ -218,7 +218,7 @@ vis.binom()
 
 Gdy *p* jest większe niż 0.5 to rozkład jest lewoskośny (długi lewy ogon), gdy mniejsze to prawoskośny (długi prawy ogon).
 
-## Rozkład Poissona
+## Rozkład Poissona (*Poisson distribution*)
 Drugim popularnym typem dyskretnego rozkładu prawdopodobieństwa jest rozkład Poissona. Rozkład ten jest często nazywany rozkładem zdarzeń rzadkich. Tak więc przykłady zmiennych o rozkładzie Poissona to: liczba wypadków na osobę, liczba wygranych w totolotku, liczba awarii występujących w procesie produkcyjnym, liczba zwierząt na pewnym terenie. Te liczby są zgodne z rozkładem Poissona. 
 
 Rozkładu Poissona używamy, kiedy nie jesteśmy w stanie określić, ile maksymalnie zajść zdarzenia może wystąpić w pewnym czasie *t*. W przeciwieństwie do rozkładu dwumianowego, gdzie zlicza się liczbę sukcesów i porażek, w rozkładzie Poissona liczy się jedynie zajście zdarzenia.
@@ -307,10 +307,11 @@ W odróżnieniu od dyskretnych rozkładów prawdopodobieństwa, w których zmien
 
 W ciągłym rozkładzie prawdopodobieństwa nie zadajemy już pytania, o prawdopodobieństwo otrzymania jednej konkretnej wartości zmiennej losowej (bo wynosi ono zero). Możemy jedynie pytać jakie jest prawdopodobieństwo, że zmienna ciągła przyjmuje wartości w pewnym przedziale liczbowym (mówimy wtedy o gęstości prawdopodobieństwa).
 
-## Rozkład jednostajny
+## Rozkład jednostajny (*Uniform distribution*)
 Inaczej rozkład prostokątny. Jest to rozkład prawdopodobieństwa, dla którego gęstość prawdopodobieństwa w przedziale od *a* do *b* jest stała i różna od zera, a poza nim równa zeru.
 
 Na przykład, rozkład jednostajny, w którym *a* = 1 i *b* = 3.
+
 <img src="images/uniform_distribution.png" alt="Uniform distribution" width="400px">
 
 Prawdopodobieństwo uzyskania konkretnej wartości między 1 i 3 wynosi 0. Pole pod krzywą to prawdopodobieństwo całkowite wynoszące 1.
@@ -331,7 +332,7 @@ punif(12.5, 0, 15)
 qunif(0.9, 0, 15)
 ```
 
-## Rozkład normalny
+## Rozkład normalny (*Normal distribution*)
 Rozkład normalny zwany jest także rozkładem Gaussa. Rozkład ten ma charakterystyczny kształt "krzywej dzwonowej" i jest symetryczny względem średniej (średnia jest na środku). 
 
 Jest to teoretyczny rozkład prawdopodobieństwa powszechnie wykorzystywany do modelowania wielu zjawisk przyrodniczych, ekonomicznych itd. Zmienne losowe, które podlegają rozkładowi normalnemu zależą od wielu czynników (a formalnie od nieskończonej liczby innych niezależnych zmiennych losowych). Przykładowo, istnieje prawie nieograniczona liczba czynników warunkujących wzrost człowieka (np. sposób odżywiania, predyspozycje genetyczne, przebyte choroby, poziom hormonu wzrostu itd.). Tak więc należy się̨ spodziewać, że w populacji wzrost podlega rozkładowi normalnemu - najwięcej mamy ludzi średniego wzrostu, mało ludzi bardzo niskich i mało ludzi bardzo wysokich.
@@ -343,11 +344,11 @@ library("TeachingDemos")
 vis.normal()
 ```
 
-Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większy, tym bardziej spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
+Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większe σ, tym bardziej wykres jest spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
 
 <img src="images/normal_distribution.jpg" alt="Normal distribution"> 
 
-W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie (po dwóch 68.28%). 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli średnia = 0, a odchylenie standardowe = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
+W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie wykresu (po dwóch 68.28%). Z kolei 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli μ = 0, a σ = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
 
 
 ### Zad. 22 (samodzielnie)
@@ -447,7 +448,7 @@ qqnorm(x)
 qqline(x)
 ```
 
-## Rozkład Chi-Kwadrat
+## Rozkład Chi-Kwadrat (*Chi-squared distribution*)
 
 Rozkład chi-kwadrat jest szczególnym przypadkiem rozkładu gamma. 
 
@@ -491,7 +492,7 @@ Liczba stopni swobody (*df*) w rozkładzie Chi-kwadrat jest równa liczbie losow
     1 - pchisq(9, df=3)
     ```
 
-## Rozkład t-Studenta
+## Rozkład t-Studenta (*t-distribution*)
 Rozkład t-Studenta (William Gosset, angielski chemik i statystyk o pseudonimie Student) z *n* stopniami swobody nazywamy rozkład zmiennej losowej *T* określonej następująco:
 
 <img src="images/tstudent-equation.png" alt="tStudent">
