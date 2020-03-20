@@ -171,3 +171,24 @@ Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 
                        # od danej wartości X 
 
    ```
+
+### Zad. 13
+samodzielnie
+
+### Zad. 14
+samodzielnie
+
+### Zad. 15
+samodzielnie
+
+### Zad. 16
+Wyświetl rozkład dwumianowy w R.
+
+```R
+library("TeachingDemos")              # Załaduj pakiet
+install.packages("TeachingDemos")     # Zainstaluj pakiet (jeżeli niezainstalowany)
+vis.binom()
+```
+
+Gdy *p* jest większe niż 0.5 to rozkład jest lewoskośny (długi lewy ogon), gdy mniejsze to prawoskośny (długi prawy ogon).
+
