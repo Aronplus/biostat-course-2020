@@ -101,4 +101,27 @@ Rozkład ten opisuje prawdopodobieństwo zajścia *k* sukcesów w ciągu *n* nie
 
 Funkcję prawdopodobieństwa otrzymania dokładnie *k* sukcesów na *n* prób określa wzór Bernouliego.
 
-<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20P%28X%20%3D%20k%29%20%3D%20P%28k%2C%20n%2C%20p%29%20%3D%20%7Bn%20%5Cchoose%20k%7Dp%5E%7Bk%7D%281-p%29%5E%7B%7Bn-k%7D%7D%5C%21" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20P%28X%20%3D%20k%29%20%3D%20P%28k%2C%20n%2C%20p%29%20%3D%20%7Bn%20%5Cchoose%20k%7Dp%5E%7Bk%7D%281-p%29%5E%7B%7Bn-k%7D%7D%5C%21" title="P(X = k) = P(k, n, p) = {n \choose k}p^{k}(1-p)^{{n-k}}\!" />
+
+Obliczmy prawdopodobieństwo wypadnięcia 2 orłów w trzech rzutach monetą.
+
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20P%28X%20%3D%202%29%20%3D%20P%282%2C%203%2C%200.5%29%20%3D%20%7B3%20%5Cchoose%202%7D0.5%5E%7B2%7D%20%5Ccdot%200.5%5E%7B%7B1%7D%7D%5C%21%20%3D%200.375" title="P(X = 2) = P(2, 3, 0.5) = {3 \choose 2}0.5^{2}  \cdot 0.5^{{1}}\! = 0.375" />
+
+W programie R jest funkcja `dbinom`, która oblicza prawdopodobieństwo jeżeli podamy *k*, *n* i *p*.
+
+```R
+> dbinom(2, 3, 0.5)        # Funkcja prawdopodobieństwa
+[1] 0.375
+```
+
+Jakie jest prawdopodobieństwo, że orzeł wypadnie przynajmniej raz?
+
+```R
+> dbinom(1:3, 3, 0.5)
+[1] 0.375 0.375 0.125
+> sum(dbinom(1:3, 3, 0.5))
+[1] 0.875
+```
+
+Ile zatem wynosi prawdopodobieństwo, że w 5 rzutach kostkach, szóstka wypadnie dokładnie dwa razy?
+
