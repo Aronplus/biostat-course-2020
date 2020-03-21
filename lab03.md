@@ -346,7 +346,7 @@ library("TeachingDemos")
 vis.normal()
 ```
 
-<img src="images/normal_distribution.png" alt="Normal distribution">
+<img src="images/normal_distribution.png" alt="Normal distribution" width="400px">
 
 Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większe σ, tym bardziej wykres jest spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
 
