@@ -354,6 +354,9 @@ W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszy
 
 <img src="images/normal_distribution.jpg" alt="Normal distribution"> 
 
+Poniżej znajduje się krótki i jasny opis rozkładu normalnego [5min12sek]:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rzFX5NWojp0/0.jpg)](https://youtu.be/rzFX5NWojp0)
 
 ### Zad. 22 (samodzielnie)
 >Ile wynosi prawdopodobieństwo otrzymania wartości mniejszej niż 1 w rozkładzie normalnym (μ = 0, σ = 1)?
