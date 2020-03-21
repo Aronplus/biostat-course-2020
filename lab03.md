@@ -350,9 +350,9 @@ vis.normal()
 
 Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większe σ, tym bardziej wykres jest spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
 
-<img src="images/normal_distribution.jpg" alt="Normal distribution"> 
-
 W odległości 1 odchylenia standardowego od średniej znajduje się 34.14% wszystkich obserwacji po jednej stronie wykresu (po dwóch 68.28%). Z kolei 95.45% wszystkich obserwacji nie różni się od średniej arytmetycznej o więcej niż 2 odchylenia standardowe. Jeżeli μ = 0, a σ = 1 to rozkład normalny nazywa się standardowym rozkładem normalnym i oznaczany jest jako N(0, 1).
+
+<img src="images/normal_distribution.jpg" alt="Normal distribution"> 
 
 
 ### Zad. 22 (samodzielnie)
@@ -378,31 +378,31 @@ pnorm(1, mean=0, sd=1)
 
 Skorzystaj z `vis.norm()` i ustaw rozkład dla μ = 1.9 i σ = 0.5.
 
-1. Widać gołym okiem. Dla formalności:
+1. Mniejszej lub równej 1.9:
 
    ```R
    pnorm(1.9, 1.9, 0.5)
    ```
 
-2. Mniejszej lub równej 2.2.
+2. Mniejszej lub równej 2.2:
 
    ```R
    pnorm(2.2, 1.9, 0.5)
    ```
 
-3. Większej od 2.2.
+3. Większej od 2.2:
 
    ```R
    1 - pnorm(2.2, 1.9, 0.5)
    ```
 
-4. Na poziomie 1.4-2.4.
+4. Na poziomie 1.4-2.4:
 
    ```R
    pnorm(2.4, 1.9, 0.5) - pnorm(1.4, 1.9, 0.5)
    ```
 
-5. Poniżej jakiego poziomu ekspresji znajduje się 75% genów.
+5. Poniżej jakiego poziomu ekspresji znajduje się 75% genów:
 
    ```R
    qnorm(0.75, 1.9, 0.5)
@@ -452,7 +452,7 @@ qqnorm(x)
 qqline(x)
 ```
 
-## Rozkład Chi-Kwadrat (*Chi-squared distribution*)
+## Rozkład Chi-kwadrat (*Chi-squared distribution*)
 
 Rozkład chi-kwadrat jest szczególnym przypadkiem rozkładu gamma. 
 
@@ -470,7 +470,7 @@ Gdzie zmienne losowe *X*<sub>i</sub> ~ *N*(0,1) są niezależne. Wtedy zmienna l
 
 
 ### Zad. 28
->Korzystając z biblioteki TeachingDemos przedstaw wykres funkcji gęstości rozkładu chi-kwadrat. Od czego zależy kształt tego rozkładu? 
+>Korzystając z pakietu TeachingDemos przedstaw wykres funkcji gęstości rozkładu chi-kwadrat. Od czego zależy kształt tego rozkładu? 
 
 Kształt rozkładu zależy od liczby stopni swobody *n*. Im więcej obserwacji wybieram (zwiększam *shape* – liczbę stopniu swobody) wykres zmienia się z prawoskośnego na bardziej dzwonowaty przypominający rozkład normalny. Dla małych wartości *n* rozkład jest silnie asymetryczny. W miarę wzrostu *n*, wykres staje się coraz bardziej symetryczny i podobny do rozkładu normalnego.
 
@@ -549,7 +549,7 @@ Centralne Twierdzenie Graniczne daje nam dwie zależności matematyczne:
 
    <img src="images/Central_Limit_Theorem_sd.png" title="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" />
 
-3. Twierdzenie Graniczne działa dla każdego parametru (nie tylko średniej): np. mediany, sumy liczb, dominanty, rozstępu.
+Twierdzenie Graniczne działa dla każdego parametru (nie tylko średniej): np. mediany, sumy liczb, dominanty, rozstępu.
 
 ### Zad. 34 (samodzielnie)
 > Sprawdź, jak działa w praktyce CTG przeprowadzając symulację http://www.ltcconline.net/greenl/java/Statistics/clt/cltsimulation.html dla: (1) rozkładu jednostajnego (2) rozkładu prawostronnego i (3) swojego narysowanego rozkładu.
