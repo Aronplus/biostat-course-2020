@@ -38,7 +38,7 @@ P(A) = |A| / |Ω| = 2 / 6 = 0.33
 Zdarzenia, których prawdopodobieństwo otrzymania wynosi 1 nazywają się zdarzeniami pewnymi. Z kolei, zdarzenia, których prawdopodobieństwo wynosi 0 nazywają się zdarzeniami niemożliwymi.
 
 # Dyskretne rozkłady prawdopodobieństwa
-W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym (np. liczba oczek na kostce, liczba dzieci, liczba pomyłek). Jest to zmienia skokowa, która najczęściej zmienia się o jeden.
+W dyskretnych rozkładach prawdopodobieństwa zmienna losowa przyjmuje skończony zbiór wartości w przedziale liczbowym (np. liczba oczek na kostce, liczba dzieci, liczba pomyłek, liczba par zasad, liczba białek). Jest to zmienia, która najczęściej przyjmuje wartości liczb całkowitych i zmienia się o jeden.
 
 ## Rozkład dwumianowy (*Binomial distribution*)
 Używamy tego rozkładu, kiedy w wyniku możemy otrzymać dwie wartości (np. sukces-porażka, zdrowy-chory, orzeł-reszka, puryna-pirymidyna).
@@ -95,7 +95,7 @@ P(X >= 1) = 3/8 + 3/8 + 1/8
 ### Zad. 7
 >Oblicz wartość oczekiwaną liczby wypadnięć orła w trzech rzutach monetą. 
 
-Wartość oczekiwana liczby wypadnięć orła to:
+Wartość oczekiwana określa spodziewany wynik doświadczenia losowego. Spodziewana liczba otrzymania orła w trzech rzutach monetą wynosi:
 
 ```
 E(X) = 0 * 1/8 + 1 * 3/8 + 2 * 3/8 + 4 * 1/8
@@ -139,6 +139,8 @@ W programie R jest funkcja `dbinom`, która oblicza prawdopodobieństwo jeżeli 
 Jakie jest prawdopodobieństwo, że orzeł wypadnie przynajmniej raz?
 
 ```R
+> 1:3
+[1] 1 2 3
 > dbinom(1:3, 3, 0.5)
 [1] 0.375 0.375 0.125          # Prawdop. wypadnięcia orła 1, 2 i 3 razy  
 > sum(dbinom(1:3, 3, 0.5))     # Suma wartości tych prawdopodobieństw
@@ -163,12 +165,12 @@ Ile wynosi prawdopodobieństwo, że w 5 rzutach kostkach:
 ### Zad. 12
 >Koszykarz oddaje 4 rzuty do kosza. Piłka wpada do kosza z prawdopodobieństwem 0.8. Oblicz: (1) wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4), (2) wartość oczekiwaną celnych rzutów do kosza, (3) wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy. 
 
-1. Wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4)
+1. Wartość prawdopodobieństwa celnych rzutów do kosza (0, 1, 2, 3, 4):
 
    ```R
    dbinom(0:4, 4, 0.8)
    ```
-2. Wartość oczekiwaną celnych rzutów do kosza
+2. Wartość oczekiwaną celnych rzutów do kosza:
 
    ```R
    4 * 0.8       # E(X) = n * p
@@ -182,7 +184,7 @@ Ile wynosi prawdopodobieństwo, że w 5 rzutach kostkach:
    sum(x * y)
    ```
 
-3. Wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy.
+3. Wartość prawdopodobieństwa, że koszykarz trafi celnie co najwyżej 3 razy:
 
    ```R
    sum(dbinom(0:3, 4, 0.8))
@@ -272,8 +274,8 @@ ppois(10100, 10000)
 Dane z zadania:
 
 ```
-p = 1/10000         # prawdopodobieństwo pomyłki
-n = 2000            # maksymalną liczbę prób
+p = 1/10000         # Prawdopodobieństwo pomyłki polimeraz
+n = 2000            # Maksymalna liczba prób
 k = 0
 ```
 
@@ -294,7 +296,7 @@ Rozkład Poissona ma zastosowanie do obliczenia przybliżonej wartości prawdopo
 > dpois(0, lambda)  # przybliżona wartość prawdopodobieństwa
 ```
 
-Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzystając z biblioteki TeachingDemos i funkcji vis.binom(). Wyraźne podobieństwo w dwóch rozkładach widoczne jest gdy *n* >= 100 i *p* <= 0.2.
+Zależność między rozkładem dwumianowym a Poissona można zobaczyć korzystając z biblioteki TeachingDemos i funkcji vis.binom(). Wyraźne podobieństwo w dwóch rozkładach widoczne jest gdy *n* >= 100 i *p* <= 0.2. Niebieskiem kolorem zaznaczony jest rozkład Poissona, z kolei czarne słupki oznaczają rozkład dwumianowy. 
 
 <img src="images/binom_pois.png" alt="Binominal_Poisson">
 
@@ -343,6 +345,8 @@ Kształt rozkładu zależy od dwóch parametrów: średniej i odchylenia standar
 library("TeachingDemos")
 vis.normal()
 ```
+
+<img src="images/normal_distribution.png" alt="Normal distribution">
 
 Średnia jest zaznaczona niebieską kreską pionową, a odchylenie standardowe poziomą. Średnia i odchylenie standardowe w populacji oznaczane są małymi greckimi literami: μ (mi) i σ (sigma). Średnia przesuwa krzywą wzdłuż osi odciętych, natomiast parametr odchylenia standardowego powoduje, że krzywa jest bardziej spłaszczona lub wysmukła (im większe σ, tym bardziej wykres jest spłaszczony). Mimo zmiany parametrów rozkład jest cały czas symetryczny (średnia = medianie = dominancie). 
 
@@ -536,7 +540,7 @@ Centralne Twierdzenie Graniczne jest jedną z bardzo interesujących i jednocze�
 
 Centralne Twierdzenie Graniczne daje nam dwie zależności matematyczne:
 
-1. Parametr (np. średnia) uzyskanego rozkładu normalnego, będzie taki sam jak w przypadku wejściowej oryginalnej populacji.
+1. Średnia uzyskanego rozkładu normalnego jest równa średniej w wejściowej oryginalnej populacji.
 
    <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cmu_%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cmu" title="\mu_{\bar{x}} = \mu" />
 
