@@ -215,7 +215,7 @@ Wkład poszczególnych zmiennych (genów) można również zwizualizować na wyk
 Strzałki oznaczają zmienne (geny). Kierunek strzałek pokazuje wpływ genów odpowiednio na pierwszą i drugą składową - strzałki zwrócone w lewą/prawą stronę mają wpływ na PC1, natomiast strzałki zwróconę w górę/dół mają wpływ na PC2. Duża liczba zmiennych (genów) w naszych danych uniemożliwia odczytanie na wykresie genów mających wpływ na PC1 (jednak wiemy już, które geny mają istotny wpływ na PC1 z wcześniej wykonanej analizy ładunków). Na wykresie możemy za to odczytać geny mające największy wpływ na PC2 (np. `gene51`, `gene86`, `gene53`). 
 
 
-Kąt przecięcia strzałek na wykresie jest proporcjonalny do korelacji między cechami, a długość strzałek odzwierciedla odchylenie standardowe. Jeżeli strzałki mają przeciwne zwroty to dane zmienne są ujemnie skorelowane (nie można jednak ocenić wartości korelacji), jeżeli zwroty są prostopadłe to zmienne są nieskorelowane, a jeżeli zwroty są bliskie to zmienne są dodatnio skorelowane. Na przykład, geny `gene51` i `gene86` są ujemnie skorelowane, między genami `gene51` i `gene70` nie ma korelacji, z kolei geny `gene70` i `gene49` są dodatnio skorelowane.
+Kąt przecięcia strzałek na wykresie jest proporcjonalny do korelacji między zmiennymi (genami), a długość strzałek odzwierciedla odchylenie standardowe. Jeżeli strzałki mają przeciwne zwroty to dane zmienne są ujemnie skorelowane (nie można jednak ocenić wartości korelacji), jeżeli zwroty są prostopadłe to zmienne są nieskorelowane, a jeżeli zwroty są bliskie to zmienne są dodatnio skorelowane. Na przykład, geny `gene51` i `gene86` są ujemnie skorelowane, między genami `gene51` i `gene70` nie ma korelacji, z kolei geny `gene70` i `gene49` są dodatnio skorelowane.
 
 
 ### Zad. 2
@@ -363,7 +363,7 @@ text(mds, rownames(mds), cex = 0.6)
 
 <img src="images/08-03-mds_plot1.png" alt="08-03-mds_plot1" width="500px">
 
-Podobnie jak w przypadku analizy PCA, stany Vermount i Wirginia Zachodnia są blisko siebie na wykresie. 
+Podobnie jak w przypadku analizy PCA, stany Vermont i Wirginia Zachodnia są blisko siebie na wykresie. 
 
 
 #### Ładunki
